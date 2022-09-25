@@ -69,6 +69,21 @@ mean(problem2_df$vec_fact)
 ```
 In the dataset `problem2_df` we are able to compute the mean for a numeric or logical vector but are unable to compute the mean if it is a character or factor vector.
 
+### Converting the variables using as.numeric
+
+```{r converting_vectors_to_numeric}
+
+convert_logical = as.numeric(problem2_df$vec_logical)
+view(convert_logical)
+
+convert_char = as.numeric(problem2_df$vec_char)
+
+convert_fact = as.numeric(problem2_df$vec_fact)
+view(convert_fact)
+```
+
+
+
 
 
 
