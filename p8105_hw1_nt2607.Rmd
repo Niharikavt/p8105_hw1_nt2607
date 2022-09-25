@@ -22,3 +22,7 @@ This problem focuses the use of inline R code, plotting, and the behavior of ggp
 
 The variable names of this dataset are : `r names(penguins)`.
 
+This dataset contains information about different species of penguins on some island. Some important variables describing the physical traits of these penguins include `bill_length_mm` , `bill_depth_mm`, `flipper_length_mm`, `body_mass_g`, `sex` and `year`.
+
+The size of the dataset : There are `r nrow (penguins)` rows and `r ncol (penguins)` columns in this dataset.
+
