@@ -42,7 +42,36 @@ penguins_df_plot = tibble(
 ggplot(penguins_df_plot, aes(x = x, y = y, color = species)) + geom_point()
 
 ggsave("scatter_plot.pdf", height = 4, width = 6)
+
 ```
+
+## Problem 2
+
+This problem is intended to emphasize variable types and introduce coercion; some awareness of how R treats numeric, character, and factor variables is necessary for working with these data types in practice.
+
+```{r dataframe_2}
+
+problem2_df = tibble(
+  norm_samp = rnorm (10, mean = 0, sd = 1),
+  vec_logical = norm_samp > 0,
+  vec_char = c("a", "b", "c", "d", "e","f", "g", "h", "i", "j"),
+  vec_fact = factor(c("low", "low","low", "med", "med", "med","high", "high", "high", "low"))
+)
+
+head(problem2_df)
+
+
+
+
+
+```
+
+
+
+
+
+
+
 
 
 
