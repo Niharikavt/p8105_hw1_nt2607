@@ -28,3 +28,23 @@ This dataset contains information about different species of penguins on some is
 The size of the dataset : There are `r nrow (penguins)` rows and `r ncol (penguins)` columns in this dataset.
 
 The mean flipper length is `r mean(pull(penguins,flipper_length_mm), na.rm = TRUE)`
+
+### Scatterplot of `flipper_length_mm` vs `bill_length_mm`
+
+```{r scatterplot_penguins}
+
+penguins_df_plot = tibble(
+  x = penguins$bill_length_mm,
+  y = penguins$flipper_length_mm,
+  species = penguins$species
+)
+
+ggplot(penguins_df_plot, aes(x = x, y = y, color = species)) + geom_point()
+
+ggsave( "penguins_df_plot.pdf, height = 6, width = 6")
+
+```
+
+
+
+
