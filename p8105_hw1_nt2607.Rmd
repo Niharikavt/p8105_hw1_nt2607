@@ -4,6 +4,7 @@ output: github_document
 ---
 
 ```{r}
+knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
 
@@ -11,7 +12,7 @@ data("penguins", package = "palmerpenguins")
 
 ### The penguins dataset can be viewed here: 
   
-head (penguins)
+head(penguins)
 ```
 
 ## Problem 1
@@ -26,3 +27,4 @@ This dataset contains information about different species of penguins on some is
 
 The size of the dataset : There are `r nrow (penguins)` rows and `r ncol (penguins)` columns in this dataset.
 
+The mean flipper length is `r mean(pull(penguins,flipper_length_mm), na.rm = TRUE)`
