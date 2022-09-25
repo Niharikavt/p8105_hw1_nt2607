@@ -58,13 +58,17 @@ problem2_df = tibble(
   vec_fact = factor(c("low", "low","low", "med", "med", "med","high", "high", "high", "low"))
 )
 
-head(problem2_df)
+view(problem2_df)
 
-
-
-
+problem2_df
+mean(problem2_df$norm_samp)
+mean(problem2_df$vec_logical)
+mean(problem2_df$vec_char)
+mean(problem2_df$vec_fact)
 
 ```
+In the dataset `problem2_df` we are able to compute the mean for a numeric or logical vector but are unable to compute the mean if it is a character or factor vector.
+
 
 
 
