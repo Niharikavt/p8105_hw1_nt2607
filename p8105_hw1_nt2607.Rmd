@@ -82,7 +82,12 @@ convert_fact = as.numeric(problem2_df$vec_fact)
 view(convert_fact)
 ```
 
+We are able to convert the logical vector into numeric, the TRUE and FALSE are assigned two values 1 and 0 and we are able to compute their mean.
+We are unable to convert the character vector into numeric, we get the warning message - NAs introduced by coercion and cannot compute the mean.
+We are able to convert the factor vector which is assigned 3 values - 1, 2, 3. We are able to compute the mean for them.
 
+
+###End of HW1
 
 
 
